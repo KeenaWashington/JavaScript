@@ -1,0 +1,45 @@
+/* Split the container into two columns */
+/* E */
+.container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Map container in the left column */
+.world-map-container {
+  grid-column: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Info container in the right column */
+.apiInfo-container {
+  grid-column: 2;
+  float: right;
+  width: 100%;
+  padding: 10px;
+  border-left: 1px solid #c5c3c3;
+  background-color: #fbf7f7;
+  box-sizing: border-box;
+}
+
+/* SVG map styling */
+svg {
+  width: 100%;
+  height: 90%;
+}
+/* Path style */
+path {
+  fill: lightgray;
+  stroke: black;
+  stroke-width: 0.5;
+  transition: fill 0.3s ease;
+}
+/*Path Hover */
+path:hover {
+  fill: rgb(166, 0, 255);
+  cursor: pointer;
+}
